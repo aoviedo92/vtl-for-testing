@@ -1,0 +1,15 @@
+{
+  "name": "velocity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amplify-appsync-simulator": "^1.27.7",
+    "amplify-velocity-template": "^1.4.5"
+  }
+}

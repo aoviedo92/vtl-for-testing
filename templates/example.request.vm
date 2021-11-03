@@ -1,0 +1,26 @@
+#set( $mutation = "
+mutation {
+    UpdatePublishedDebtorDicom(
+        documents: $util.toJson($context.info.variables.documents),
+        published_debtor_dicom: $context.info.variables.published_debtor_dicom
+    ) {
+        ApiCode
+        ApiMessage
+    }
+}
+" )
+#set($body = {
+    "query": "$mutation"
+})
+{
+    "version": "2018-05-29",
+    "method": "POST",
+    "params": {
+        "headers": {
+            "Content-Type": "application/json",
+            "x-api-key": "XXX"
+        },
+        "body":$util.toJson($body)
+    },
+    "resourcePath":"/"
+}
